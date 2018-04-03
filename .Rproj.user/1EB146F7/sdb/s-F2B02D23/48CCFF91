@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "source(\"load data.R\")\n\n# Plot 2\n\nplot2 <- plot(data$Time, data$Global_active_power, ylab = \"Global Active Power (kilowatts)\", xlab =\"\", type = \"l\")\ndev.copy(png, file = \"plot2.png\")\ndev.off()\n\n",
+    "created" : 1522739809292.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1422366652",
+    "id" : "48CCFF91",
+    "lastKnownWriteTime" : 1522745785,
+    "last_content_update" : 1522745785520,
+    "path" : "~/R/ExData_Plotting1/ExData_Plotting1/plot2.R",
+    "project_path" : "plot2.R",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

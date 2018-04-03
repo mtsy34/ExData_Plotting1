@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "source(\"load data.R\")\n\n# Plot 3\n\nwith(data, plot(Time, Sub_metering_1, type = \"l\", xlab=\"\", ylab = \"Energy sub metering\"))\nlines(data$Time, data$Sub_metering_2, col = \"red\")\nlines(data$Time, data$Sub_metering_3, col = \"blue\")\nlegend(\"topright\", lty = 1, lwd = 3, col = c(\"black\", \"red\", \"blue\"), legend = c(\"Sub_metering_1\", \"Sub_metering_2\", \"Sub_metering_3\"))\ndev.copy(png, file = \"plot3.png\")\ndev.off()\n\n",
+    "created" : 1522739815525.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1765510691",
+    "id" : "497C776E",
+    "lastKnownWriteTime" : 1522745787,
+    "last_content_update" : 1522745787198,
+    "path" : "~/R/ExData_Plotting1/ExData_Plotting1/plot3.R",
+    "project_path" : "plot3.R",
+    "properties" : {
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

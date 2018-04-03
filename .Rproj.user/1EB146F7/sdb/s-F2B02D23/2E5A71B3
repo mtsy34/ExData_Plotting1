@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "source(\"load data.R\")\n\n# Plot 1\n\nplot1 <- hist(data$Global_active_power, col = \"red\", main = \"Global Active Power\", xlab = \"Global Active Power (kilowatts)\")\ndev.copy(png, file = \"plot1.png\")\ndev.off()\n\n",
+    "created" : 1522739802051.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "463946457",
+    "id" : "2E5A71B3",
+    "lastKnownWriteTime" : 1522745784,
+    "last_content_update" : 1522745784331,
+    "path" : "~/R/ExData_Plotting1/ExData_Plotting1/plot1.R",
+    "project_path" : "plot1.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
