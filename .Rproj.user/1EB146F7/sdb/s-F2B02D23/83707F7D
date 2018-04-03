@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "source(\"load data.R\")\n\n# Plot 4\n\npar(mfrow = c(2,2))\n\n## Plot 1\nplot(data$Time, data$Global_active_power, ylab = \"Global Active Power (kilowatts)\", xlab =\"\", type = \"l\")\n\n## Plot 2\nplot(data$Time, data$Voltage, xlab = \"datetime\", ylab = \"Voltage\", type = \"l\")\n\n## Plot 3\nwith(data, plot(Time, Sub_metering_1, type = \"l\", xlab=\"\", ylab = \"Energy sub metering\"))\nlines(data$Time, data$Sub_metering_2, col = \"red\")\nlines(data$Time, data$Sub_metering_3, col = \"blue\")\nlegend(\"topright\", lty = 1, lwd = 3, col = c(\"black\", \"red\", \"blue\"), legend = c(\"Sub_metering_1\", \"Sub_metering_2\", \"Sub_metering_3\"))\n\n## Additional new plot\nplot(data$Time, data$Global_reactive_power, type = \"l\", xlab = \"datetime\", ylab = \"Global_reactive_power\")\n\ndev.copy(png, \"plot4.png\")\ndev.off()\n",
+    "contents" : "source(\"load data.R\")\n\n# Plot 4\n\npar(mfrow = c(2,2))\n\n## Plot 1\nplot(data$Time, data$Global_active_power, ylab = \"Global Active Power (kilowatts)\", xlab =\"\", type = \"l\")\n\n## Plot 2\nplot(data$Time, data$Voltage, xlab = \"datetime\", ylab = \"Voltage\", type = \"l\")\n\n## Plot 3\nwith(data, plot(Time, Sub_metering_1, type = \"l\", xlab=\"\", ylab = \"Energy sub metering\"))\nlines(data$Time, data$Sub_metering_2, col = \"red\")\nlines(data$Time, data$Sub_metering_3, col = \"blue\")\nlegend(\"topright\", col = c(\"black\", \"red\", \"blue\"), legend = c(\"Sub_metering_1\", \"Sub_metering_2\", \"Sub_metering_3\"), lty = 1, lwd = 2.5)\n\n## Additional new plot\nplot(data$Time, data$Global_reactive_power, type = \"l\", xlab = \"datetime\", ylab = \"Global_reactive_power\")\n\ndev.copy(png, \"plot4.png\", width = 480, height = 480)\ndev.off()\n",
     "created" : 1522739820702.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2860418103",
+    "hash" : "2330993867",
     "id" : "83707F7D",
-    "lastKnownWriteTime" : 1522745788,
-    "last_content_update" : 1522745788571,
+    "lastKnownWriteTime" : 1522747013,
+    "last_content_update" : 1522747013596,
     "path" : "~/R/ExData_Plotting1/ExData_Plotting1/plot4.R",
     "project_path" : "plot4.R",
     "properties" : {
